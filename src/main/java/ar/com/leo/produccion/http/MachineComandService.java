@@ -23,6 +23,7 @@ public class MachineComandService {
       Gson gson = new Gson();
       String json = gson.toJson(machines);
 
+      System.out.println("Sending machines...");
       try (OutputStream os = connection.getOutputStream()) {
         byte[] input = json.getBytes("utf-8");
         os.write(input, 0, input.length);
