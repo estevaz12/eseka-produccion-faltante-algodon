@@ -78,6 +78,8 @@ public class ArticuloProducidoDAO {
                                 talle = 1;
                             } else if (styleCode.charAt(5) == '9') { // Talle 00
                                 talle = 8;
+                            } else if (styleCode.charAt(5) == 'X' && styleCode.charAt(6) == 'S') {
+                                talle = 0;
                             } else if (styleCode.charAt(5) == 'S') {
                                 talle = 1;
                             } else if (styleCode.charAt(5) == 'M') {
